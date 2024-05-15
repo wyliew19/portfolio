@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>Curriculum Vitae</title>
+        <title>Resume</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,16 @@
     </head>
     <body>
         <section>
-            
+            <!-- MOBILE NAVIGATION -->
+            <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+            </div>
+            <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+                <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">ABOUT</a>
+                <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">RESUME</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">CONTACT</a>
+            </div>
     
             <!-- SOCIAL SECTION -->
             <section class="image-section w3-quarter w3-fixed w3-padding-small ">
@@ -24,10 +33,7 @@
                 <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/wyliew19" target="_blank">
                 <i data-feather="github"></i>
                 </a>
-                <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
-                <i data-feather="twitter"></i>
-                </a>
-                <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+                <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/wyliew/" target="_blank">
                 <i data-feather="linkedin"></i>
                 </a>
             </div>
@@ -35,7 +41,7 @@
             <div class="w3-container w3-padding-16">
                 <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
                 <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
-                <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+                <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
                 </a>
             </div>
             </section>
@@ -43,61 +49,43 @@
             <!--CV CONTENT SECTION-->
             <section class="w3-threequarter w3-padding-large w3-right">
             <!--DESKTOP NAVIGATION-->
-            <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-                <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
-                <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+            <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small" style="position: sticky; top: 0; background-color: white; box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);">
+                <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber">HOME</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+                <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
             </div>
             <div class="content-container w3-margin-top-2">
                 <!--HOME SECTION-->
                 <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
                 <p style="font-style: italic; font-size:x-large; text-align: center;">"Any fool can know. The point is to understand."</p>
                 <p style="font-size: x-large; text-align: right;"> - Albert Einstein</p>
-                <h1>John Doe (35)</h2>
-                <h2>Community manager</h3>
+                <h1>Will Wylie (21)</h2>
+                <h2>Software Development</h3>
                 <p></p>
                 </div>
     
                 <!--ABOUT SECTION-->
                 <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+                <h2 class="w3-border-bottom border-dark" style="border-width: 3px !important;">ABOUT ME</h2>
                 <p class="w3-margin-top-2"> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam porttitor sollicitudin efficitur. 
-                    Integer posuere odio vel ullamcorper euismod. 
-                    Aliquam sit amet nulla tortor. 
-                    Integer vehicula nunc et condimentum feugiat. 
-                    Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-                </p>
-                <p class=""> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam porttitor sollicitudin efficitur. 
-                    Integer posuere odio vel ullamcorper euismod. 
-                    Aliquam sit amet nulla tortor. 
-                    Integer vehicula nunc et condimentum feugiat. 
-                    Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-                </p>
-                <p class=""> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nam porttitor sollicitudin efficitur. 
-                    Integer posuere odio vel ullamcorper euismod. 
-                    Aliquam sit amet nulla tortor. 
-                    Integer vehicula nunc et condimentum feugiat. 
-                    Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
+                    A highly motivated and enthusiastic individual with a passion for technology and software development.
+                    I have a strong base in software development and a keen interest in learning new technologies.
+                    I am a quick learner and a team player with excellent communication skills.
+                    While I have no professional experience in the field, I have worked on several projects and have a good understanding of the software development process.
                 </p>
                 </div>
     
                 <!--RESUME-->
                 <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
-                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+                <h2 class="w3-border-bottom border-dark" style="border-width: 3px !important;">RESUME</h2>
                 <div class="w3-container w3-margin-top-2 w3-cursive">
     
                     <!--EMPLOYMENT HISTORY SECTION-->
                     <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
                     <div class="">
-                    <h4>Community Manager at the Company-X</h4>
-                    <p>September 2020 - Present</p>
+                    <h4>Lowes - Delivery Coordinator</h4>
+                    <p>November 2023 - Present</p>
                     <ul class="w3-ul" style="font-weight: 500;">
                         <li>Ensured that published content meets brand guidelines and overall communication styles</li>
                         <li>Built relations with the online community</li>
@@ -111,15 +99,6 @@
                         <li>Ensured that audience growth rate is in increase through social networs</li>
                         <li>Managed social media campaigns for various social media platforms to align with marketing strategies</li>
                         <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership</li>
-                    </ul>
-                    </div>
-                    <div class="">
-                    <h4>Social Community Manager at the Company-Z</h4>
-                    <p>January 2014 - April 2016 </p>
-                    <ul class="w3-ul" style="font-weight: 500;">
-                        <li>Organized and managed community events to boost brand awareness</li>
-                        <li>Monitored, tracked and reported on feedback and online reviews</li>
-                        <li>Provided engaging text, image and video content for all social media and professional accounts</li>
                     </ul>
                     </div>
                 </div>
@@ -179,7 +158,7 @@
     
                 <!--CONTACT SECTION-->
                 <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+                <h2 class="w3-border-bottom border-dark" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
                 <div class="w3-margin-top-2" style="font-weight: 500;">
                     <p>Name: John Doe</p>
                     <p>Adress: Street name 99, 77001 Houston, Texas</p>
@@ -189,7 +168,7 @@
                 </div>
     
             <!--FOOTER-->
-            <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+            <footer class="w3-container w3-border-top w3-center w3-margin-top-4 w3-border-amber">
                 <p>2024 - Will Wylie</p>
                 <p class="w3-small">This website is powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
             <!-- End footer -->
